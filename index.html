@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawcare Alliance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <header>
+  <div class="container">
+    <img src="images/logo.jpg" alt="Pawcare Alliance Logo" class="logo" />
+    <button id="menu-toggle" class="menu-btn">Menu ☰</button>
+    <nav id="menu" class="menu-hidden">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#adopt">Adopt</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#goal">Our Goal</a></li>
+        <li><a href="#experience">Day With Wonderful Pets</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Pawcare Alliance</h1>
+      <p>Helping stray dogs find loving homes.</p>
+      <a href="#adopt" class="btn">Adopt a Dog</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <img src="images/about-us.jpg" alt="About Us Image" class="section-image" />
+      <p>We are dedicated to rescuing and rehabilitating stray dogs in Bangalore. Our mission is to provide them with shelter, medical care, and find them loving families.</p>
+    </div>
+  </section><br>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <img src="images/services.jpg" alt="Our Services Image" class="section-image" />
+      <ul>
+        <li>Rescue and Rehabilitation of stray dogs</li>
+        <li>Medical Care and Vaccination</li>
+        <li>Adoption and Foster Care Programs</li>
+        <li>Community Awareness and Education</li>
+        <li>Volunteer and Donation Opportunities</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="adopt" class="adopt">
+    <div class="container">
+      <h2>Adopt a Dog</h2>
+      <div class="dog-cards">
+        <div class="dog-card">
+          <img src="images/dog1.jpg" alt="Buddy" />
+          <h3>Buddy</h3>
+          <p>A playful golden retriever who loves attention.</p>
+          <a href="#contact" class="btn">Adopt Me</a>
+        </div>
+
+        <div class="dog-card">
+          <img src="images/dog2.jpg" alt="Luna" />
+          <h3>Luna</h3>
+          <p>A gentle husky rescued from the streets, very friendly.</p>
+          <a href="#contact" class="btn">Adopt Me</a>
+        </div>
+
+        <div class="dog-card">
+          <img src="images/dog3.jpg" alt="Max" />
+          <h3>Max</h3>
+          <p>An energetic beagle, fully vaccinated and healthy.</p>
+          <a href="#contact" class="btn">Adopt Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="awards">
+    <div class="container">
+      <h2>Awards</h2>
+      <img src="images/awards.jpg" alt="Awards Image" class="section-image" />
+      <ul>
+        <li>Best NGO Award 2023 – Animal Welfare Foundation</li>
+        <li>Community Service Recognition – Bangalore City Council</li>
+        <li>Excellence in Animal Care – National Pet Welfare Organization</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="goal" class="goal">
+    <div class="container">
+      <h2>Our Goal</h2>
+      <img src="images/goals.jpg" alt="Our Goal Image" class="section-image" />
+      <p>Our goal is to create a compassionate community where every stray dog is given a safe and loving home, ensuring no dog suffers from neglect or abuse.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Day With Wonderful Pets</h2>
+      <img src="images/experience.jpg" alt="Day With Wonderful Pets Image" class="section-image" />
+      <p>Join us for special days filled with fun, learning, and bonding with our rescued pets. These events help socialize the dogs and educate the community on responsible pet ownership.</p>
+    </div>
+  </section>
+
+  <section id="donate" class="donate">
+    <div class="container">
+      <h2>Support Our Cause</h2>
+      <img src="images/donate.jpg" alt="Support Our Cause Image" class="section-image" />
+      <p>Your donations help us provide food, shelter, and medical care to stray dogs.</p>
+      <a href="#contact" class="btn">Donate Now</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Pawcare Alliance. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', () => {
+    if (menu.classList.contains('menu-hidden')) {
+      menu.classList.remove('menu-hidden');
+    } else {
+      menu.classList.add('menu-hidden');
+    }
+  });
+
+  // Optional: close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && e.target !== menuToggle) {
+      menu.classList.add('menu-hidden');
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
